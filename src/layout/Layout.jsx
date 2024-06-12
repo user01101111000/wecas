@@ -27,14 +27,13 @@ export default function Layout() {
           current,
           forecast: { forecastday },
           location: { country, name, localtime, lat, lon },
-        } = data[0];
+        } = data;
 
         setTodayWeather({
           country,
           name,
           localtime,
           current,
-          imageUrl: data[1],
           lat,
           lon,
         });
