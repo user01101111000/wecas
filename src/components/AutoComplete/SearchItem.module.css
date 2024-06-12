@@ -1,0 +1,31 @@
+.listItem {
+  padding: 1.5rem 1rem;
+  cursor: pointer;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.itemIcon {
+  font-size: 1.3rem;
+}
+.itemText {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.itemText h1 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.itemText p {
+  font-size: 0.8rem;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.listItem:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}

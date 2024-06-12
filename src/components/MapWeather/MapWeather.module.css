@@ -1,0 +1,11 @@
+.mapWeather {
+  background-color: var(--black-second);
+  border-radius: 20px;
+  grid-area: e;
+  overflow: hidden;
+}
+
+.leaflet-container {
+  height: 400px !important;
+  width: 400px !important;
+}

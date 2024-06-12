@@ -1,0 +1,29 @@
+.AutoComplete {
+  position: absolute;
+  top: 120%;
+  left: 0;
+  max-height: 500px;
+  width: 100%;
+  z-index: 200;
+  border-radius: 20px;
+  background-color: var(--black-second);
+  overflow: auto;
+  border: thin solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchList {
+  background-color: var(--black-second);
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+}
+
+.notFoundText {
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-style: italic;
+  margin: 2rem;
+}

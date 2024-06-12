@@ -1,0 +1,45 @@
+.Layout {
+  height: 100dvh;
+  width: 100%;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(13, 1fr);
+  padding: 1rem;
+  grid-template-areas:
+    "b b b b b b b b b e e e e e e e"
+    "d d d d d d d d d e e e e e e e"
+    "d d d d d d d d d e e e e e e e"
+    "d d d d d d d d d e e e e e e e"
+    "d d d d d d d d d e e e e e e e"
+    "d d d d d d d d d e e e e e e e"
+    "f f f f f f f f f e e e e e e e"
+    "f f f f f f f f f g g g g g g g"
+    "f f f f f f f f f g g g g g g g"
+    "f f f f f f f f f g g g g g g g"
+    "f f f f f f f f f g g g g g g g"
+    "f f f f f f f f f g g g g g g g"
+    "f f f f f f f f f g g g g g g g";
+}
+
+@media screen and (max-width: 900px) {
+  .Layout {
+    grid-template-rows: repeat(15, 1fr);
+    grid-template-areas:
+      "b b b b b b b b b b b b b b b b"
+      "d d d d d d d d d d d d d d d d"
+      "d d d d d d d d d d d d d d d d"
+      "d d d d d d d d d d d d d d d d"
+      "d d d d d d d d d d d d d d d d"
+      "e e e e e e e e e e e e e e e e"
+      "e e e e e e e e e e e e e e e e"
+      "e e e e e e e e e e e e e e e e"
+      "f f f f f f f f f f f f f f f f"
+      "f f f f f f f f f f f f f f f f"
+      "f f f f f f f f f f f f f f f f"
+      "g g g g g g g g g g g g g g g g"
+      "g g g g g g g g g g g g g g g g"
+      "g g g g g g g g g g g g g g g g"
+      "g g g g g g g g g g g g g g g g";
+  }
+}
