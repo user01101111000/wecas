@@ -71,10 +71,10 @@
   height: 100%;
 }
 .maskot {
-  width: 13rem;
+  width: 10rem;
   height: auto;
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: -10%;
   z-index: 3;
 
@@ -113,7 +113,7 @@
     height: auto;
   }
   .maskot {
-    top: -30%;
+    top: -20%;
     left: 2%;
     transform: rotate(20deg) scale(1.1);
   }
@@ -140,8 +140,8 @@
     gap: 0.7rem;
   }
   .maskot {
-    top: -20%;
-    left: -10%;
+    top: -10%;
+    left: -8%;
     transform: rotate(20deg) scale(0.7);
   }
 }

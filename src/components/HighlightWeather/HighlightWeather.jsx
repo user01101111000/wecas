@@ -1,7 +1,7 @@
 import style from "./HighlightWeather.module.css";
 import WeatherBox from "./WeatherBox";
 import { WeatherContext, useContext } from "../../context/weatherContext";
-import maskot from "../../assets/images/maskot.png";
+import maskot from "../../assets/images/maskot.gif";
 import weeklyBG from "../../assets/images/weeklyBG.jpg";
 export default function HighlightWeather() {
   const {

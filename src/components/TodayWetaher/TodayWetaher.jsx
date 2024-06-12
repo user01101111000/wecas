@@ -10,7 +10,7 @@ import { WeatherContext, useContext } from "../../context/weatherContext";
 
 export default function TodayWetaher() {
   const {
-    todayWeather: { country, name, localtime, current, lat, lon },
+    todayWeather: { country, name, localtime, current, lat, lon, imageUrl },
   } = useContext(WeatherContext);
 
   const locationLink = `https://www.google.com/maps/search/?api=1&query=${lat},${lon}`;
@@ -25,10 +25,7 @@ export default function TodayWetaher() {
 
   return (
     <article className={style.todayWetaher}>
-      <img
-        className={style.imgWrapper}
-        src="https://w0.peakpx.com/wallpaper/160/922/HD-wallpaper-beautiful-sunset-sunset-nature.jpg"
-      />
+      <img className={style.imgWrapper} src={imageUrl} />
 
       <a className={style.cityLabel} href={locationLink} target="_blank">
         <FaLocationDot className={style.icon} />

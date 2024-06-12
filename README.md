@@ -21,6 +21,3 @@
 
 6) 
 ![img6](src/assets/design/6.png)
-
-7) 
-![img7](src/assets/design/7.png)

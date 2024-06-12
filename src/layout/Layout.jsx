@@ -27,7 +27,7 @@ export default function Layout() {
           current,
           forecast: { forecastday },
           location: { country, name, localtime, lat, lon },
-        } = data;
+        } = data[0];
 
         setTodayWeather({
           country,
@@ -36,6 +36,7 @@ export default function Layout() {
           current,
           lat,
           lon,
+          imageUrl: data[1],
         });
         setGeoLoc({ lat, lon, name });
         setWeatherHourly({ forecastday });
