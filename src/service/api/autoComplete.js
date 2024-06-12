@@ -1,7 +1,7 @@
 import axios from "axios";
 
 async function autoComplete(city) {
-  const url = "http://api.weatherapi.com/v1/search.json";
+  const url = "https://api.weatherapi.com/v1/search.json";
 
   const response = await axios.get(url, {
     params: {
