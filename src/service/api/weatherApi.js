@@ -1,7 +1,7 @@
 import axios from "axios";
 import getRandomImage from "./getRandomImage";
 async function getWeatherByCountry(country) {
-  const url = "http://api.weatherapi.com/v1/forecast.json";
+  const url = "https://api.weatherapi.com/v1/forecast.json";
 
   const response = await axios.get(url, {
     params: {
