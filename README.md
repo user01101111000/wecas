@@ -1,6 +1,6 @@
 ### React Weatico Hereus (Weather App)
 
-#### [Preview Link](https://github.com/)
+#### [Preview Link](https://react-weatico.vercel.app/)
 
 #### Screenshots : 
 
