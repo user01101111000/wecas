@@ -4,12 +4,14 @@ import "../styles/Layout.css";
 import NotFoundCity from "../components/NotFoundCity/NotFoundCity";
 
 import getWeatherByCountry from "../service/api/weatherApi";
+import getCurrentCity from "../service/api/getCurrentCity";
 import { useEffect } from "react";
 import { WeatherContext, useContext } from "../context/weatherContext";
 
 export default function Layout() {
   const {
     currentCity,
+    setCurentCity,
     setTodayWeather,
     setGeoLoc,
     setWeatherHourly,
@@ -20,7 +22,20 @@ export default function Layout() {
   } = useContext(WeatherContext);
 
   useEffect(() => {
+    navigator.geolocation.getCurrentPosition(
+      async ({ coords: { latitude, longitude } }) => {
+        const city = await getCurrentCity(latitude, longitude);
+        setCurentCity(city);
+      },
+      () => {
+        setCurentCity("Baku");
+      }
+    );
+  }, []);
+
+  useEffect(() => {
     setLoaded(false);
+
     getWeatherByCountry(currentCity)
       .then((data) => {
         const {

@@ -54,7 +54,7 @@ const images = [
 
 async function getWeatherByCountry(country) {
   const url = "https://api.weatherapi.com/v1/forecast.json";
-
+  console.log(country);
   const response = await axios.get(url, {
     params: {
       q: country,
