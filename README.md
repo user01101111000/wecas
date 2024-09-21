@@ -1,23 +1,12 @@
-### React Weatico Hereus (Weather App)
+<div align="center">
+<img src ="/src/assets/images/WECASTEXT.png" alt="wecas" width="30%" title='wecas' />
+</div>
 
-#### [Preview Link](https://react-weatico.vercel.app/)
+</br>
 
-#### Screenshots : 
+I have a nice combination and wearing it today will make me feel good. But wait a minute, is the weather suitable for it? Let's check the weather and make a combination accordingly.
 
-1) 
-![img1](src/assets/design/1.png)
+</br>
 
-2) 
-![img2](src/assets/design/2.png)
-
-3) 
-![img3](src/assets/design/3.png)
-
-4) 
-![img4](src/assets/design/4.png)
-
-5) 
-![img5](src/assets/design/5.png)
-
-6) 
-![img6](src/assets/design/6.png)
+<div align="center"><img src ="/src/assets/images/WECAS.png" alt="wecas" width="100%" title='wecas' />
+</div>

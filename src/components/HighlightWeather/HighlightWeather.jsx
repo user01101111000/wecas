@@ -16,7 +16,7 @@ export default function HighlightWeather() {
     <article className={style.highlightWeather}>
       <img src={maskot} alt="" className={style.maskot} />
       <img src={weeklyBG} alt="" className={style.imgWrapper} />
-      <h1>Weekly (Average temperatures)</h1>
+      <h1>Last 3 days temperature</h1>
 
       <div className={style.boxArea}>{weatherBoxes}</div>
     </article>
